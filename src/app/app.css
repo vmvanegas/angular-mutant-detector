@@ -1,0 +1,162 @@
+
+:host {
+  display: block;
+  min-height: 100vh;
+  font-family: system-ui, sans-serif;
+  background: #0f172a;
+  color: #e2e8f0;
+  padding: 1.5rem;
+  box-sizing: border-box;
+}
+
+.app-shell {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100%;
+}
+
+.card {
+  width: min(720px, 100%);
+  background: #111827;
+  border: 1px solid #334155;
+  border-radius: 1rem;
+  box-shadow: 0 20px 60px rgba(15, 23, 42, 0.35);
+  padding: 2rem;
+}
+
+.card-header h1 {
+  margin: 0;
+  font-size: clamp(2rem, 3vw, 2.75rem);
+  color: #f8fafc;
+}
+
+.card-header p {
+  margin: 0.75rem 0 1.5rem;
+  color: #cbd5e1;
+}
+
+label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+  color: #f8fafc;
+}
+
+.dna-grid {
+  display: grid;
+  gap: 0.4rem;
+  grid-template-columns: repeat(6, minmax(3rem, 1fr));
+  justify-items: center;
+  margin-bottom: 1rem;
+}
+
+.dna-row {
+  display: contents;
+}
+
+.dna-grid input {
+  width: 3rem;
+  height: 3rem;
+  text-align: center;
+  border-radius: 0.75rem;
+  border: 1px solid #334155;
+  background: #0f172a;
+  color: #e2e8f0;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+  font-size: 1.25rem;
+  text-transform: uppercase;
+  outline: none;
+}
+
+.dna-grid input.dna-cell {
+  transition: background-color 0.2s ease, border-color 0.2s ease;
+}
+
+.highlight-green {
+  background: #16a34a !important;
+  border-color: #22c55e !important;
+  color: #ecfccb !important;
+}
+
+.highlight-red {
+  background: #dc2626 !important;
+  border-color: #f87171 !important;
+  color: #fee2e2 !important;
+}
+
+.highlight-blue {
+  background: #2563eb !important;
+  border-color: #60a5fa !important;
+  color: #bfdbfe !important;
+}
+
+.highlight-yellow {
+  background: #f59e0b !important;
+  border-color: #fbbf24 !important;
+  color: #fffbeb !important;
+}
+
+.highlight-purple {
+  background: #7c3aed !important;
+  border-color: #a855f7 !important;
+  color: #ede9fe !important;
+}
+
+.dna-grid input:focus {
+  border-color: #38bdf8;
+  box-shadow: 0 0 0 4px rgba(56, 189, 248, 0.15);
+}
+
+.actions {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: flex-start;
+}
+
+button {
+  border: none;
+  border-radius: 999px;
+  background: linear-gradient(135deg, #38bdf8, #818cf8);
+  color: #0f172a;
+  font-weight: 700;
+  padding: 0.85rem 1.5rem;
+  cursor: pointer;
+  transition: transform 0.2s ease, filter 0.2s ease;
+}
+
+button:hover {
+  transform: translateY(-1px);
+  filter: brightness(1.05);
+}
+
+.message {
+  margin-top: 1rem;
+  padding: 1rem;
+  border-radius: 0.75rem;
+  font-weight: 600;
+}
+
+.message.error {
+  background: #821c35;
+  color: #ffe4e6;
+}
+
+.message.success {
+  background: #0f766e;
+  color: #d1fae5;
+}
+
+.example {
+  margin-top: 1.5rem;
+  color: #cbd5e1;
+}
+
+.example pre {
+  margin: 0.75rem 0 0;
+  padding: 0.9rem 1rem;
+  border-radius: 0.75rem;
+  background: #1f2937;
+  overflow-x: auto;
+}

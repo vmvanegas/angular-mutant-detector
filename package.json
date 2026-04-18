@@ -1,5 +1,5 @@
 {
-  "name": "angular-mutant-test",
+  "name": "angular-mutant-detector",
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",

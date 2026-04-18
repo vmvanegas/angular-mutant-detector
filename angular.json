@@ -6,7 +6,7 @@
   },
   "newProjectRoot": "projects",
   "projects": {
-    "angular-mutant-test": {
+    "angular-mutant-detector": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -56,10 +56,10 @@
           "builder": "@angular/build:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "angular-mutant-test:build:production"
+              "buildTarget": "angular-mutant-detector:build:production"
             },
             "development": {
-              "buildTarget": "angular-mutant-test:build:development"
+              "buildTarget": "angular-mutant-detector:build:development"
             }
           },
           "defaultConfiguration": "development"
